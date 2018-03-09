@@ -79,5 +79,7 @@
 	<classpathentry kind="lib" path="E:/Tools/Jars/mockito-core-2.15.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="lib" path="E:/Tools/Jars/aspectjweaver-1.8.13.jar"/>
+	<classpathentry kind="lib" path="E:/Tools/Jars/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="E:/Tools/Jars/system-rules-1.17.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
