@@ -78,6 +78,6 @@
 	<classpathentry kind="lib" path="E:/Tools/Spring/spring-framework-5.0.2.RELEASE/libs/spring-websocket-5.0.2.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="E:/Tools/Jars/mockito-core-2.15.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
-	<classpathentry kind="lib" path="E:/Tools/Jars/aspectjweaver-1.8.9.jar"/>
+	<classpathentry kind="lib" path="E:/Tools/Jars/aspectjweaver-1.8.13.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
