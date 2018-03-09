@@ -1,8 +1,6 @@
-package com.springinaction.entity.knights;
+package com.springinaction.entity;
 
 import java.io.PrintStream;
-
-import com.springinaction.entity.quest.Quest;
 
 public class SlayDragonQuest implements Quest{
 

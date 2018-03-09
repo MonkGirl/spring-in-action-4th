@@ -5,7 +5,7 @@ package com.springinaction.main;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.springinaction.entity.knights.Knight;
+import com.springinaction.entity.Knight;
 
 /**
  * @author MonkGirl

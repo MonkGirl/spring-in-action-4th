@@ -6,10 +6,10 @@ package com.springinaction.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.springinaction.entity.knights.BraveKnight;
-import com.springinaction.entity.knights.Knight;
-import com.springinaction.entity.knights.SlayDragonQuest;
-import com.springinaction.entity.quest.Quest;
+import com.springinaction.entity.BraveKnight;
+import com.springinaction.entity.Knight;
+import com.springinaction.entity.Quest;
+import com.springinaction.entity.SlayDragonQuest;
 
 /**
  * @author MonkGirl

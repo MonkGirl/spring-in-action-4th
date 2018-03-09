@@ -6,8 +6,8 @@ import static org.mockito.Mockito.verify;
 
 import org.junit.jupiter.api.Test;
 
-import com.springinaction.entity.knights.BraveKnight;
-import com.springinaction.entity.quest.Quest;
+import com.springinaction.entity.BraveKnight;
+import com.springinaction.entity.Quest;
 
 class BraveKnightTest {
 

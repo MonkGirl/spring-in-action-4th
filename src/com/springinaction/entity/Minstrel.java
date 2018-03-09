@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.springinaction.entity.minstrel;
+package com.springinaction.entity;
 
 import java.io.PrintStream;
 

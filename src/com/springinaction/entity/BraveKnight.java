@@ -1,7 +1,4 @@
-package com.springinaction.entity.knights;
-
-import com.springinaction.entity.minstrel.Minstrel;
-import com.springinaction.entity.quest.Quest;
+package com.springinaction.entity;
 
 public class BraveKnight implements Knight{
 	private Quest quest;
