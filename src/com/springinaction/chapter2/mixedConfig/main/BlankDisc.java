@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.springinaction.chapter2.soundsystem;
+package com.springinaction.chapter2.mixedConfig.main;
 
 import java.util.List;
 
@@ -15,44 +15,20 @@ public class BlankDisc implements CompactDisc{
 	private String artist;
 	private List<String> tracks;
 	
-	public BlankDisc() {
-		super();
-	}
-	
 	public BlankDisc(String titles, String artist, List<String> tracks) {
 		this.titles = titles;
 		this.artist = artist;
 		this.tracks = tracks;
 	}
 	
-	public BlankDisc(String titles, String artist) {
-		this.titles = titles;
-		this.artist = artist;
-	}
-	
-	public void setTitles(String titles) {
-		this.titles = titles;
-	}
-	
-	public void setArtist(String artist) {
-		this.artist = artist;
-	}
-	
-	public void setTracks(List<String> tracks) {
-		this.tracks = tracks;
-	}
 	/* (non-Javadoc)
 	 * @see com.springinaction.chapter2.soundsystem.CompactDisc#play()
 	 */
 	@Override
 	public void play() {
-		System.out.println("Palying " + titles + " by " + artist);
+		System.out.println("Playing " + titles + " by " + artist);
 		for(String track : tracks) {
 			System.out.println("-Track: " + track);
 		}
-	}
-
-	public String toString() {
-		return artist + " - " + titles;
 	}
 }

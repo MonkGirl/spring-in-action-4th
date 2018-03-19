@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
+import com.springinaction.chapter2.soundsystem.BlankDisc;
 import com.springinaction.chapter2.soundsystem.MP3Player;
 
 /**
@@ -31,5 +32,10 @@ public class XmlConfigTest {
 		player.play();
 	}
 
-
+	@Test
+	public void testSetPropertiesLiteral() {
+		BlankDisc reallyBlankDisc = (BlankDisc) cpContext.getBean("reallyBlankDisc");
+		reallyBlankDisc.play();
+		System.out.println(reallyBlankDisc);
+	}
 }

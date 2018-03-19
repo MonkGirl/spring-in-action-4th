@@ -40,40 +40,81 @@
 
 	<!-- <bean id="blankDisc" class="com.springinaction.chapter2.soundsystem.BlankDisc" -->
 	<!-- c:_0="Sgt. Pepper's Lonely Hearts Club Band" c:_1="The Beatles" /> -->
-	
+
 	<bean id="blankDisc" class="com.springinaction.chapter2.soundsystem.BlankDisc">
 		<constructor-arg value="Sgt. Pepper's Lonely Hearts Club Band" />
-	    <constructor-arg value="The Beatles"/>
-	    <constructor-arg>
-	        <list>
-	            <value>Sgt. Pepper's Lonely Hearts Club Band</value>
-	            <value>With a Little Help from My Friends</value>
-	            <value>Lucy in the sky with Diamonds</value>
-	            <value>Getting Better</value>
-	            <value>Fixing a Hole</value>
-	        </list>
-	    </constructor-arg>
+		<constructor-arg value="The Beatles" />
+		<constructor-arg>
+			<list>
+				<value>Sgt. Pepper's Lonely Hearts Club Band</value>
+				<value>With a Little Help from My Friends</value>
+				<value>Lucy in the sky with Diamonds</value>
+				<value>Getting Better</value>
+				<value>Fixing a Hole</value>
+			</list>
+		</constructor-arg>
 	</bean>
-	
-	<bean id="sgtPeppers" class="com.springinaction.chapter2.soundsystem.BlankDisc" c:_0="Sgt. Peppers" c:_1="The Beatles"/>
-	<bean id="beyond" class="com.springinaction.chapter2.soundsystem.BlankDisc" c:_0="The Great Wall" c:_1="Beyond"/>
-	<bean id="greenDay" class="com.springinaction.chapter2.soundsystem.BlankDisc" c:_0="Boulevard Of Broken Dream" c:_1="GreenDay"/>
-	
-	<bean id="discgraphy" class="com.springinaction.chapter2.others.Discgraphy">
-	    <constructor-arg value="favorites"></constructor-arg>
-	    <constructor-arg>
-	        <list>
-	            <ref bean="sgtPeppers"/>
-	            <ref bean="beyond"/>
-	            <ref bean="greenDay"/>
-	        </list>
-	    </constructor-arg>
-	</bean>
-	
-	<bean id="mp3" class="com.springinaction.chapter2.soundsystem.Mp3"/>
-<!-- 	<bean id="mp3Player" class="com.springinaction.chapter2.soundsystem.MP3Player"> -->
-<!-- 	    <property name="audio" ref="mp3" /> -->
-<!-- 	</bean> -->
 
-	<bean id="mp3Player" class="com.springinaction.chapter2.soundsystem.MP3Player" p:audio-ref="mp3"/>
+	<bean id="sgtPeppers" class="com.springinaction.chapter2.soundsystem.BlankDisc"
+		c:_0="Sgt. Peppers" c:_1="The Beatles" />
+	<bean id="beyond" class="com.springinaction.chapter2.soundsystem.BlankDisc"
+		c:_0="The Great Wall" c:_1="Beyond" />
+	<bean id="greenDay" class="com.springinaction.chapter2.soundsystem.BlankDisc"
+		c:_0="Boulevard Of Broken Dream" c:_1="GreenDay" />
+
+	<bean id="discgraphy" class="com.springinaction.chapter2.others.Discgraphy">
+		<constructor-arg value="favorites"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<ref bean="sgtPeppers" />
+				<ref bean="beyond" />
+				<ref bean="greenDay" />
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="mp3" class="com.springinaction.chapter2.soundsystem.Mp3" />
+	<!-- <bean id="mp3Player" class="com.springinaction.chapter2.soundsystem.MP3Player"> -->
+	<!-- <property name="audio" ref="mp3" /> -->
+	<!-- </bean> -->
+
+	<bean id="mp3Player" class="com.springinaction.chapter2.soundsystem.MP3Player"
+		p:audio-ref="mp3" />
+
+	<!-- <bean id="reallyBlankDisc" class="com.springinaction.chapter2.soundsystem.BlankDisc"> -->
+	<!-- <property name="titles" value="Sgt. Pepper's Lonely Hearts Club Band" 
+		/> -->
+	<!-- <property name="artist" value="The Beatles"></property> -->
+	<!-- <property name="tracks"> -->
+	<!-- <list> -->
+	<!-- <value>Sgt. Pepper's Lonely Hearts Club Band</value> -->
+	<!-- <value>With a Little Help from My Friends</value> -->
+	<!-- <value>Lucy in the sky with Diamonds</value> -->
+	<!-- <value>Getting Better</value> -->
+	<!-- <value>Fixing a Hole</value> -->
+	<!-- </list> -->
+	<!-- </property> -->
+	<!-- </bean> -->
+	
+	<util:list id="trackList">
+	    <value>Sgt. Pepper's Lonely Hearts Club Band</value>
+		<value>With a Little Help from My Friends</value>
+		<value>Lucy in the sky with Diamonds</value>
+		<value>Getting Better</value>
+		<value>Fixing a Hole</value>
+	</util:list>
+	<bean id="reallyBlankDisc" class="com.springinaction.chapter2.soundsystem.BlankDisc"
+		p:titles="Sgt. Pepper's Lonely Hearts Club Band" p:artist="The Beatles"
+		p:tracks-ref="trackList">
+		<!-- <property name="tracks"> -->
+		<!-- <list> -->
+		<!-- <value>Sgt. Pepper's Lonely Hearts Club Band</value> -->
+		<!-- <value>With a Little Help from My Friends</value> -->
+		<!-- <value>Lucy in the sky with Diamonds</value> -->
+		<!-- <value>Getting Better</value> -->
+		<!-- <value>Fixing a Hole</value> -->
+		<!-- </list> -->
+		<!-- </property> -->
+	</bean>
+	
 </beans>
