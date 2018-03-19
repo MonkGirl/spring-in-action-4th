@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.springinaction.chapter2.mixedConfig.main;
+package com.springinaction.chapter2.mixedConfig.test;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,6 +12,9 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.springinaction.chapter2.mixedConfig.main.MediaPlayer;
+import com.springinaction.chapter2.mixedConfig.main.SoundSystemConfig;
 
 /**
  * @author MonkGirl
