@@ -6,7 +6,6 @@
 	<classpathentry kind="lib" path="E:/Tools/Jars/mockito-core-2.15.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="lib" path="E:/Tools/Jars/aspectjweaver-1.8.13.jar"/>
-	<classpathentry kind="lib" path="E:/Tools/Jars/junit-4.12.jar"/>
 	<classpathentry kind="lib" path="E:/Tools/Jars/system-rules-1.17.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
 		<attributes>
@@ -76,5 +75,6 @@
 	<classpathentry kind="lib" path="E:/Tools/Spring/spring-framework-5.0.4.RELEASE/libs/spring-websocket-5.0.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="E:/Tools/Spring/spring-framework-5.0.4.RELEASE/libs/spring-websocket-5.0.4.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="E:/Tools/Spring/spring-framework-5.0.4.RELEASE/libs/spring-websocket-5.0.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Tools/Jars/commons-dbcp2-2.2.0/commons-dbcp2-2.2.0.jar" sourcepath="C:/Users/MonkGirl/AppData/Local/Temp/.org.sf.feeling.decompiler1521449506401/source/commons-dbcp2-2.2.0-sources.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
