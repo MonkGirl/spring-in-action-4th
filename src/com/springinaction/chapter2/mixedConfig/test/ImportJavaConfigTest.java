@@ -19,7 +19,7 @@ import com.springinaction.chapter2.mixedConfig.xmlImportJava.PoliceConfig;
  *
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:police-config.xml")
+@ContextConfiguration("classpath:/com/springinaction/chapter2/mixedConfig/resources/police-config.xml")
 //@ContextConfiguration(classes=PoliceConfig.class)
 public class ImportJavaConfigTest {
 	@Rule
