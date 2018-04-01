@@ -14,7 +14,7 @@
 	<t:insertAttribute name="header" />
 </div>
 <div id="content">
-	<t:insertAttribute name="content" />
+	<t:insertAttribute name="body" />
 </div>
 <div id="footer">
 	<t:insertAttribute name="footer"/>

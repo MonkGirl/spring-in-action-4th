@@ -11,22 +11,22 @@
 	
 	<!-- 扩展base tile -->
 	<definition name="home" extends="base">
-		<put-attribute name="body" value="/WEB-INF/layout/body.js" />
+		<put-attribute name="body" value="/WEB-INF/pages/home.jsp" />
 	</definition>
 	
 	<definition name="registerForm" extends="base">
-		<put-attribute name="body" value="/WEB-INF/layout/registerForm.jsp" />
+		<put-attribute name="body" value="/WEB-INF/pages/registerForm.jsp" />
 	</definition>
 	
 	<definition name="profile" extends="base">
-		<put-attribute name="body" value="/WEB-INF/layout/profile.jsp" />
+		<put-attribute name="body" value="/WEB-INF/pages/profile.jsp" />
 	</definition>
 	
 	<definition name="spittles" extends="base">
-		<put-attribute name="body" value="/WEB-INF/layout/spittles.jsp" />
+		<put-attribute name="body" value="/WEB-INF/pages/spittles.jsp" />
 	</definition>
 	
 	<definition name="spittle" extends="base">
-		<put-attribute name="body" value="/WEB-INF/layout/spittle.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/pages/spittle.jsp"/>
 	</definition>
 </tiles-definitions>

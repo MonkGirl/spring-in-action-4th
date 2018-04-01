@@ -4,19 +4,33 @@
 	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="viewResolver"
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-		p:prefix="/WEB-INF/pages/" p:suffix=".jsp" 
-		p:viewClass="org.springframework.web.servlet.view.JstlView"/>
+<!-- 	<bean id="viewResolver" -->
+<!-- 		class="org.springframework.web.servlet.view.InternalResourceViewResolver" -->
+<!-- 		p:prefix="/WEB-INF/pages/" p:suffix=".jsp"  -->
+<!-- 		p:viewClass="org.springframework.web.servlet.view.JstlView"/> -->
 		
-	<bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
-		<property name="definitions">
-			<list>
-				<value>/WEB-INF/layout/tiles.xml</value>
-				<value>/WEB-INF/**/tiles.xml</value>
-			</list>
-		</property>
-	</bean>
+<!-- 	<bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer"> -->
+<!-- 		<property name="definitions"> -->
+<!-- 			<list> -->
+<!-- 				<value>/WEB-INF/layout/tiles.xml</value> -->
+<!-- 				<value>/WEB-INF/**/tiles.xml</value> -->
+<!-- 			</list> -->
+<!-- 		</property> -->
+<!-- 	</bean> -->
 			
-	<bean id="tilesViewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver"/>		
+<!-- 	<bean id="tilesViewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver"/>		 -->
+	
+	<bean id="viewResolver" 
+		class="org.thymeleaf.spring5.view.ThymeleafViewResolver"
+		p:characterEncoding="UTF-8"
+		p:templateEngine-ref="templateEngine"/>
+	
+	<bean id="templateEngine" class="org.thymeleaf.spring5.SpringTemplateEngine"
+		p:enableSpringELCompiler="true"
+		p:templateResolver-ref="templateResolver"/>	
+		
+	<bean id="templateResolver" class="org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver"
+		p:prefix="/WEB-INF/templates/"
+		p:suffix=".html"
+		p:templateMode="HTML5"/>	
 </beans>

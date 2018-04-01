@@ -7,19 +7,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Profile</title>
-<link type="text/css" rel="stylesheet" href="resources/style.css"/>
+<link type="text/css" rel="stylesheet" href="../resources/style.css"/>
 </head>
 <body>
-<div id="header">
-	<t:insertAttribute name="header" />
-</div>
-<div id="content">
-	<t:insertAttribute name="content" />
-</div>
-<div id="footer">
-	<t:insertAttribute name="footer"/>
-</div>
-
 <h1>Your Profile</h1>
 <c:out value="${spitter.username }"/><br/>
 <c:out value="${spitter.firstName }"/>

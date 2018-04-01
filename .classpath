@@ -69,11 +69,9 @@
 	<classpathentry kind="lib" path="E:/Tools/Spring/spring-framework-5.0.4.RELEASE/libs/spring-websocket-5.0.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="E:/Tools/Spring/spring-framework-5.0.4.RELEASE/libs/spring-websocket-5.0.4.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="E:/Tools/Spring/spring-framework-5.0.4.RELEASE/libs/spring-websocket-5.0.4.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="E:/Tools/Jars/commons-dbcp2-2.2.0/commons-dbcp2-2.2.0.jar" sourcepath="C:/Users/MonkGirl/AppData/Local/Temp/.org.sf.feeling.decompiler1521449506401/source/commons-dbcp2-2.2.0-sources.jar"/>
 	<classpathentry kind="lib" path="G:/Tools/apache-tomcat-9.0.6/lib/servlet-api.jar"/>
 	<classpathentry kind="lib" path="E:/Tools/Jars/jstl-1.2.jar"/>
 	<classpathentry kind="lib" path="E:/Tools/Jars/standard-1.1.2.jar"/>
-	<classpathentry kind="lib" path="E:/Tools/Jars/commons-lang3-3.7/commons-lang3-3.7.jar"/>
 	<classpathentry kind="lib" path="E:/Tools/Mockito/objenesis-2.6/objenesis-2.6.jar"/>
 	<classpathentry kind="lib" path="E:/Tools/Mockito/byte-buddy-1.8.0.jar"/>
 	<classpathentry kind="lib" path="E:/Tools/Mockito/byte-buddy-agent-1.8.0.jar"/>
@@ -96,5 +94,12 @@
 	<classpathentry kind="lib" path="E:/Tools/Jars/tiles-3.0.8/tiles-jsp-3.0.8.jar"/>
 	<classpathentry kind="lib" path="E:/Tools/Jars/tiles-3.0.8/tiles-template-3.0.8.jar"/>
 	<classpathentry kind="lib" path="E:/Tools/Tomcat/apache-tomcat-9.0.6/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="E:/Tools/Jars/tiles-3.0.8/tiles-autotag-core-runtime-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/Tools/Jars/commons/commons-beanutils-1.9.3/commons-beanutils-1.9.3.jar"/>
+	<classpathentry kind="lib" path="E:/Tools/Jars/commons/commons-dbcp2-2.2.0/commons-dbcp2-2.2.0.jar"/>
+	<classpathentry kind="lib" path="E:/Tools/Jars/commons/commons-digester-2.1/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="E:/Tools/Jars/commons/commons-lang3-3.7/commons-lang3-3.7.jar"/>
+	<classpathentry kind="lib" path="E:/Tools/Jars/commons/commons-logging-1.2/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/Tools/Jars/commons/commons-collections4-4.1/commons-collections4-4.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
