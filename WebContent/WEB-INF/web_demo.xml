@@ -10,16 +10,10 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-  <!-- 使用java配置 -->
-  <context-param>
-  	<param-name>contextClass</param-name>
-  	<param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
-  </context-param>
-  
-  <!-- 定义根配置类 -->
+  <!-- 设置根上下文配置文件的位置 -->
   <context-param>
   	<param-name>contextConfigLocation</param-name>
-  	<param-value>com.springinaction.chapter7.config.RootConfig</param-value>
+  	<param-value>/WEB-INF/spring/root-context.xml</param-value>
   </context-param>
   
   <!-- 注册ContextLoaderListener -->
@@ -31,15 +25,10 @@
   <servlet>
   	<servlet-name>appServlet</servlet-name>
   	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-  	<!-- 使用java配置 -->
-  	<init-param>
-  		<param-name>contextClass</param-name>
-  		<param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
-  	</init-param>
-  	<!-- 指定DispatcherServlet配置类 -->
+  	<!-- 指定配置文件路径 -->
   	<init-param>
   		<param-name>contextConfigLocatin</param-name>
-  		<param-value>com.springinaction.chapter7.confg.WebConfig</param-value>
+  		<param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>
   	</init-param>
   	<load-on-startup>1</load-on-startup>
   </servlet>
