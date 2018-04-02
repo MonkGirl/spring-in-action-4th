@@ -1,4 +1,4 @@
-package com.springinaction.chapter7.javaConfig;
+package com.springinaction.chapter7.config;
 
 import javax.servlet.Filter;
 

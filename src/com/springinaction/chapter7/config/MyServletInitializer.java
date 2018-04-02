@@ -1,6 +1,6 @@
-package com.springinaction.chapter7.javaConfig;
+package com.springinaction.chapter7.config;
 
-import javax.servlet.Filter;
+import javax.servlet.MultipartConfigElement;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration.Dynamic;
@@ -18,6 +18,9 @@ public class MyServletInitializer implements WebApplicationInitializer{
 		Dynamic myServlet = servletContext.addServlet("myServlet", MyServlet.class);
 		//映射servlet
 		myServlet.addMapping("/custom/**");
+		
+		//设置multipart配置
+		myServlet.setMultipartConfig(new MultipartConfigElement("/tmp/spittr/uploads*"));
 		
 		//注册Filter
 		javax.servlet.FilterRegistration.Dynamic myFilter = servletContext.addFilter("myFilter", MyFilter.class);

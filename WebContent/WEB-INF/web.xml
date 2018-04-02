@@ -41,6 +41,12 @@
   		<param-name>contextConfigLocatin</param-name>
   		<param-value>com.springinaction.chapter7.confg.WebConfig</param-value>
   	</init-param>
+  	<!-- 配置MultipartConfigElement -->
+  	<multipart-config>
+  		<location>/tmp/spittr/uploads</location>
+  		<max-file-size>2097152</max-file-size>
+  		<max-request-size>4194304</max-request-size>
+  	</multipart-config>
   	<load-on-startup>1</load-on-startup>
   </servlet>
   
