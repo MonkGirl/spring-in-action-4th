@@ -10,13 +10,13 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-  <!-- 使用java配置 -->
+  <!-- 使用java配置 启用java注解，从而不使用xml配置，如果不指定为java配置，则会默认使用/WEB-INF目录下applicationContext.xml进行配置-->
   <context-param>
   	<param-name>contextClass</param-name>
   	<param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
   </context-param>
   
-  <!-- 定义根配置类 -->
+  <!-- 定义根配置类 对应applicationContext.xml-->
   <context-param>
   	<param-name>contextConfigLocation</param-name>
   	<param-value>com.springinaction.chapter7.config.RootConfig</param-value>
@@ -29,30 +29,30 @@
   
   <!-- 注册DispatcherServlet -->
   <servlet>
-  	<servlet-name>appServlet</servlet-name>
+  	<servlet-name>myServlet</servlet-name>
   	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-  	<!-- 使用java配置 -->
+  	<!-- 使用java配置 指定此servlet使用java配置，而不是使用默认xml配置，默认xml配置会自动加载servlet-context.xml的配置文件-->
   	<init-param>
   		<param-name>contextClass</param-name>
   		<param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
   	</init-param>
   	<!-- 指定DispatcherServlet配置类 -->
   	<init-param>
-  		<param-name>contextConfigLocatin</param-name>
-  		<param-value>com.springinaction.chapter7.confg.WebConfig</param-value>
+  		<param-name>contextConfigLocation</param-name>
+  		<param-value>com.springinaction.chapter7.config.WebConfig</param-value>
   	</init-param>
+  	<load-on-startup>1</load-on-startup>
   	<!-- 配置MultipartConfigElement -->
   	<multipart-config>
-  		<location>/tmp/spittr/uploads</location>
+  		<location>/tmp/data</location><!-- 必须配置 work/catalina目录下-->
   		<max-file-size>2097152</max-file-size>
   		<max-request-size>4194304</max-request-size>
   	</multipart-config>
-  	<load-on-startup>1</load-on-startup>
   </servlet>
   
   <!-- 将DispatcherServlet映射到"/" -->
   <servlet-mapping>
-  	<servlet-name>appServlet</servlet-name>
+  	<servlet-name>myServlet</servlet-name>
   	<url-pattern>/</url-pattern>
   </servlet-mapping>
 </web-app>

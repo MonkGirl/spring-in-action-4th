@@ -6,28 +6,28 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 import com.springinaction.chapter7.filter.MyFilter;
 
-public class MyFilterIntializer extends AbstractAnnotationConfigDispatcherServletInitializer{
+public class MyFilterIntializer {//extends AbstractAnnotationConfigDispatcherServletInitializer{
 
-	@Override
-	protected Class<?>[] getRootConfigClasses() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	protected Class<?>[] getServletConfigClasses() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	protected String[] getServletMappings() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	protected Filter[] getServletFilters() {
-		return new Filter[] {new MyFilter()};
-	}
+//	@Override
+//	protected Class<?>[] getRootConfigClasses() {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+//
+//	@Override
+//	protected Class<?>[] getServletConfigClasses() {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+//
+//	@Override
+//	protected String[] getServletMappings() {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+//
+//	protected Filter[] getServletFilters() {
+//		return new Filter[] {new MyFilter()};
+//	}
 
 }
