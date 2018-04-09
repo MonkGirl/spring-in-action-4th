@@ -13,6 +13,12 @@
 		<config>src/com/springinaction/chapter3/resources/profileconfigs.xml</config>
 		<config>src/com/springinaction/chapter4/xmlAspect/resources/aspectConfig.xml</config>
 		<config>src/config/view.xml</config>
+		<config>WebContent/WEB-INF/spring/domain.xml</config>
+		<config>WebContent/WEB-INF/spring/flow.xml</config>
+		<config>WebContent/WEB-INF/spring/mvc.xml</config>
+		<config>WebContent/WEB-INF/spring/root-config.xml</config>
+		<config>WebContent/WEB-INF/spring/dataaccess.xml</config>
+		<config>WebContent/WEB-INF/spring/services.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
