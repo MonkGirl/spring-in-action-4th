@@ -11,5 +11,5 @@
 	<import resource="domain.xml"/>
 	<import resource="dataaccess.xml"/>
 	
-	<context:component-scan base-package="com.springinaction.chapter8"/>
+	<context:component-scan base-package="com.springinaction.chapter8.pizza"/>
 </beans>

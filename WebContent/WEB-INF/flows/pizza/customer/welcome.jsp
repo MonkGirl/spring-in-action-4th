@@ -13,6 +13,7 @@
 		<input type="text" name="phoneNumber" />
 		<br />
 		<input type="submit" name="_eventId_phoneEntered" value="Lookup Customer" />
+		<input type="submit" name="_eventId_cancel" value="cancel" />
 	</form:form>
 </body>
 </html>

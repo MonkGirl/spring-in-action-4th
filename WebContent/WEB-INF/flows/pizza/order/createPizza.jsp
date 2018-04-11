@@ -2,7 +2,7 @@
 <div>
 
 	<h2>Create Pizza</h2>
-	<form:form commandName="pizza">
+	<form:form modelAttribute="pizza">
 		<input type="hidden" name="_flowExecutionKey" value="${flowExecutionKey}" />
 
 		<b>Size: </b>

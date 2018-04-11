@@ -8,7 +8,7 @@
 
 	<view-state id="takePayment" model="flowScope.paymentDetails">
 		<on-entry>
-			<set name="flowScope.paymentDetails" value="new com.springinaction.chapater8.pizza.domain.PaymentDetails()"/>
+			<set name="flowScope.paymentDetails" value="new com.springinaction.chapter8.pizza.domain.PaymentDetails()"/>
 			<evaluate result="viewScope.paymentTypeList" expression="T(com.springinaction.chapter8.pizza.domain.PaymentType).asList()"/>
 		</on-entry>
 		<transition on="paymentSubmitted" to="verifyPayment"/>

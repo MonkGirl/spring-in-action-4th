@@ -4,6 +4,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 import com.springinaction.chapter8.pizza.service.PricingEngine;
 
 public class Order implements Serializable{
@@ -16,6 +19,9 @@ public class Order implements Serializable{
 	private Customer customer;
 	private List<Pizza> pizzas;
 	private Payment payment;
+	
+	@Autowired
+	@Qualifier("pricingEngineImpl")
 	private PricingEngine pricingEngine;
 	
 	public void setPricingEngine(PricingEngine pricingEngine) {

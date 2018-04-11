@@ -5,10 +5,12 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+	<!-- 启动注解驱动 -->
 	<mvc:annotation-driven />
 	
+	<!-- 启用jsp视图渲染 -->
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/jsp/"/>
+		<property name="prefix" value="/WEB-INF/pizza/"/>
 		<property name="suffix" value=".jsp"/>
 	</bean>
 </beans>

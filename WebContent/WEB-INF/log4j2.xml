@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" advertiser="multicastdns" monitorInterval="60">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+		<!-- File和RollingFile的文件名（fileName）不能重复 -->
+<!-- 		<File name="fileLog" fileName="${web:rootDir}\logs\log.log" > -->
+<!-- 			<PatternLayout -->
+<!-- 				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" /> -->
+<!-- 		</File> -->
+		<RollingFile  name="rollingFileLog" fileName="${web:rootDir}\logs\log.log" 
+			filePattern="${web:rootDir}\logs\$${date:yyyy-MM}\log-%d{yyyy-MM-dd}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+				<SIZEBASEDTRIGGERINGPOLICY SIZE="20 MB"/>
+			</Policies>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="rollingFileLog" />
+		</Root>
+	</Loggers>
+</Configuration>

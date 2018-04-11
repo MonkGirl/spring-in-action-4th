@@ -7,7 +7,7 @@
 
 	<context:spring-configured />
 	
-	<bean id="order" class="com.springinaction.chapter8.pizza.domain.Order" abstract="true">
-		<property name="pricingEngine" ref="pricingEngine"></property>
-	</bean>
+<!-- 	<bean id="order" class="com.springinaction.chapter8.pizza.domain.Order" abstract="true"> -->
+<!-- 		<property name="pricingEngine" ref="pricingEngine"></property> -->
+<!-- 	</bean> -->
 </beans>
