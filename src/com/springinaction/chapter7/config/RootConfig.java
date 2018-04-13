@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  *
  */
 @Configuration
-@ComponentScan(basePackages= {"com.springinaction.chapter7"})
+@ComponentScan(basePackages= {"com.springinaction.chapter9"})
 public class RootConfig {
 
 }
