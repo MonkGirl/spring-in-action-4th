@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.springinaction.chapter5.spittr.entity.Spitter;
 
 @Controller
-//@RequestMapping("/spitter")
+@RequestMapping("/spitter")
 public class SpitterController {
 
 	@RequestMapping(value = "/main", method = GET)
@@ -21,9 +21,29 @@ public class SpitterController {
 		return "main";
 	}
 	
-//	@RequestMapping(value="/save",method = POST)
-//	public String save(@Valid Spitter spitter) {
-//		System.out.println(spitter.getUsername());
-//		return "success";
-//	}
+	@RequestMapping(value="/login", method = GET)
+	public String login(@Valid Spitter spitter) {
+		System.out.println("--------------------"+spitter.getUsername());
+		return "success";
+	}
+	
+	@RequestMapping(value="/loginSuccess", method = GET)
+	public String loginSuccess(@Valid Spitter spitter) {
+		return "success";
+	}
+	
+	@RequestMapping(value="/loginFailure", method = GET)
+	public String loginFailure(@Valid Spitter spitter) {
+		return "failure";
+	}
+	
+	@RequestMapping(value="/me", method = GET)
+	public String showMe(@Valid Spitter spitter) {
+		return "showMe";
+	}
+	
+	@RequestMapping(value="/others", method = GET)
+	public String showOthers(@Valid Spitter spitter) {
+		return "showOthers";
+	}
 }

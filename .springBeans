@@ -19,6 +19,7 @@
 		<config>WebContent/WEB-INF/spring/root-config.xml</config>
 		<config>WebContent/WEB-INF/spring/dataaccess.xml</config>
 		<config>WebContent/WEB-INF/spring/services.xml</config>
+		<config>WebContent/WEB-INF/spring/datasource.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

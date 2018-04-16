@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 使用配置JNDI数据源 -->
+<!-- 	<beans profile="production" > -->
+<!-- 		<jee:jndi-lookup id="jndiDataSource" jndi-name="/jdbc/SpitterDS" resource-ref="true"/> -->
+<!-- 	</beans> -->
+	
+	<!-- 使用数据源连接池(DBCP) -->
+	<beans profile="dev">
+		<bean id="dbcpDataSource" class="org.apache.commons.dbcp2.BasicDataSource"
+			p:driverClassName="oracle.jdbc.driver.OracleDriver"
+			p:url="jdbc:oracle:thin:127.0.0.1:1521:study"
+			p:username="c##matrin"
+			p:password="matrin"
+			p:initialSize="5"
+			p:maxTotal="10"/>
+	</beans>
+		
+	<!-- 使用DriverManagerDataSource配置 -->
+	<beans profile="prod">
+		<bean id="driverManagerDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+			p:driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+			p:url="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=study"
+			p:username="sa"
+			p:password="2930321"/>
+	</beans>
+		
+	<!-- 嵌入式数据库 -->
+<!-- 	<beans> -->
+<!-- 		<jdbc:embedded-database id="embeddDatabase" type="H2"> -->
+<!-- 			<jdbc:script location="com/springinaction/spitter/db/jdbc/schema.sql"/> -->
+<!-- 			<jdbc:script location="com/springinaction/spitter/db/jdbc/test-data.sql"/> -->
+<!-- 		</jdbc:embedded-database> -->
+<!-- 	</beans>	 -->
+</beans>

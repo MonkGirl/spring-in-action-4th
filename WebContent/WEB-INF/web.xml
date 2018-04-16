@@ -16,6 +16,12 @@
   	<param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
   </context-param>
   
+  <!-- 选择dataSource配置源 -->
+  <context-param>
+  	<param-name>spring.profiles.default</param-name>
+  	<param-value>prod</param-value>
+  </context-param>
+  
   <!-- 定义根配置类 对应applicationContext.xml-->
 <!--   <context-param> -->
 <!--   	<param-name>contextConfigLocation</param-name> -->

@@ -19,7 +19,7 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "com.springinaction.chapter9" })
+@ComponentScan(basePackages = { "com.springinaction.chapter9", "com.springinaction.chapter10" })
 public class WebConfig implements WebMvcConfigurer, ApplicationContextAware {
 
 	// @Bean
