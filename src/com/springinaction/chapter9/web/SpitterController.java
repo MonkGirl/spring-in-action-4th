@@ -21,10 +21,9 @@ public class SpitterController {
 		return "main";
 	}
 	
-	@RequestMapping(value="/login", method = GET)
+	@RequestMapping(value="/logout", method = GET)
 	public String login(@Valid Spitter spitter) {
-		System.out.println("--------------------"+spitter.getUsername());
-		return "success";
+		return "main";
 	}
 	
 	@RequestMapping(value="/loginSuccess", method = GET)

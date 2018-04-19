@@ -9,9 +9,9 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<!-- 使用配置JNDI数据源 -->
-<!-- 	<beans profile="production" > -->
-<!-- 		<jee:jndi-lookup id="jndiDataSource" jndi-name="/jdbc/SpitterDS" resource-ref="true"/> -->
-<!-- 	</beans> -->
+	<beans profile="production" >
+		<jee:jndi-lookup id="jndiDataSource" jndi-name="/jdbc/oracle" resource-ref="true"/>
+	</beans>
 	
 	<!-- 使用数据源连接池(DBCP) -->
 	<beans profile="dev">

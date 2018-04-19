@@ -8,13 +8,13 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.springframework.test.context.ActiveProfiles;
+import org.springframework.jndi.JndiObjectFactoryBean;
 
 @Configuration
 public class DataSourceConfig {
 	
 	private static final String oracleDriverClassName = "oracle.jdbc.driver.OracleDriver";
-	private static final String oracleUrl = "jdbc:oracle:thin:127.0.0.1:1521:ORCL";
+	private static final String oracleUrl = "jdbc:oracle:thin:@//127.0.0.1:1521:ORCL";
 	private static final String oracleUsername = "c##martin";
 	private static final String oraclePassword = "martin";
 	
@@ -27,15 +27,15 @@ public class DataSourceConfig {
 	 * JNDI配置数据源
 	 * @return
 	 */
-//	@Profile("production")//生产环境的数据源
-//	@Bean
-//	public JndiObjectFactoryBean jndiDataSource() {
-//		JndiObjectFactoryBean jndiObjectFB = new JndiObjectFactoryBean();
-//		jndiObjectFB.setJndiName("jdbc/SpitterDS");
-//		jndiObjectFB.setResourceRef(true);
-//		jndiObjectFB.setProxyInterface(DataSource.class);
-//		return jndiObjectFB;
-//	}
+	@Profile("production")//生产环境的数据源
+	@Bean
+	public JndiObjectFactoryBean jndiDataSource() {
+		JndiObjectFactoryBean jndiObjectFB = new JndiObjectFactoryBean();
+		jndiObjectFB.setJndiName("jdbc/oracle");
+		jndiObjectFB.setResourceRef(true);
+		jndiObjectFB.setProxyInterface(DataSource.class);
+		return jndiObjectFB;
+	}
 	
 	/**
 	 * 使用BasicDataSource配置数据源

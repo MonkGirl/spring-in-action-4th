@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-	  xmlns:th="http://www.thymeleaf.org">
+	  xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
   <head>
     <title>Spitter</title>
     <link rel="stylesheet" 
@@ -15,6 +16,7 @@
     <a th:href="@{/spitter/register}">Register</a>
   
   <form name='f' th:action='@{/spitter/login}' method='POST'>
+<!--   <form name='f' th:action='http://www.baidu.com' method='POST'> -->
    <table>
     <tr><td>User:</td><td>
         <input type='text' name='username' value='' /></td></tr>
@@ -24,6 +26,7 @@
     <input id="remember_me" name="remember-me" type="checkbox" />
     <label for="remember_me" class="inline">Remember me</label></td></tr>
     <tr><td colspan='2'>
+    	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/><!-- csrf防护功能 -->
         <input name="submit" type="submit" value="Login" /></td></tr>
    </table>
   </form>
