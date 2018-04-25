@@ -14,7 +14,7 @@ import org.springframework.jndi.JndiObjectFactoryBean;
 public class DataSourceConfig {
 	
 	private static final String oracleDriverClassName = "oracle.jdbc.driver.OracleDriver";
-	private static final String oracleUrl = "jdbc:oracle:thin:@//127.0.0.1:1521:ORCL";
+	private static final String oracleUrl = "jdbc:oracle:thin:@//127.0.0.1:1521/ORCL";
 	private static final String oracleUsername = "c##martin";
 	private static final String oraclePassword = "martin";
 	

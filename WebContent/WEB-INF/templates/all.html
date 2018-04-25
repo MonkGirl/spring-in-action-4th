@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Spitter</title>
+<link rel="stylesheet" type="text/css" th:href="@{/resources/style.css}"/>
+</head>
+<body>
+<h1 style="color:green;">Congratulation!</h1><hr/>
+<form method="POST" th:object="${listAll}">
+<table>
+	<tr>
+		<th>用户名</th>
+		<th>名</th>
+		<th>姓</th>
+		<th>邮箱</th>
+	</tr>
+	<tr th:each="spitter:${listAll}">
+		<td>
+			<span th:text="${spitter.username}"></span>
+		</td>
+		<td>
+			<span th:text="${spitter.firstName}"></span>
+		</td>
+		<td>
+			<span th:text="${spitter.lastName}"></span>
+		</td>
+		<td>
+			<span th:text="${spitter.email}"></span>
+		</td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
