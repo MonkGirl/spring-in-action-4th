@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>404</title>
+<title>500</title>
 </head>
 <body>
 	<h1 style="color:red;font-weight:bold;font-family:Microsoft YaHei">500</h1>

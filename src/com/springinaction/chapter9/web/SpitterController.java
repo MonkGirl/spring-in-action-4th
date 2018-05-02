@@ -11,6 +11,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.springinaction.chapter11.entity.Spitter;
 import com.springinaction.chapter9.services.SpitterService;
@@ -53,22 +55,23 @@ public class SpitterController {
 		return "showOthers";
 	}
 	
-	@ModelAttribute("listAll")
-	public List<Spitter> findAll(){
-		return spitterService.findAll();
-	}
+	//公用的方法
+//	@ModelAttribute("listAll")
+//	public List<Spitter> findAll(){
+//		return spitterService.findAll();
+//	}
 	
 	@RequestMapping(value="/findAll", method = GET)
-	public String findAll(Model model) {
-		List<Spitter> listAll = spitterService.findAll();
-		model.addAttribute(listAll);
-		return "all";
+	public ModelAndView findAll() {
+		ModelAndView mav = new ModelAndView("all");
+		mav.addObject("listAll", spitterService.findAll());
+		return mav;
 	}
 	
 	@RequestMapping(value="/findByUsername", method = GET)
-	public String findByUsername(@Valid Spitter spitter, Model model) {
-		Spitter resultSpitter = spitterService.findByUsername(spitter.getUsername());
-		model.addAttribute(resultSpitter);
-		return "someone";
+	public ModelAndView findByUsername(@RequestParam String username) {
+		ModelAndView mav = new ModelAndView("someone");
+		mav.addObject("spitter", spitterService.findByUsername(username));
+		return mav;
 	}
 }

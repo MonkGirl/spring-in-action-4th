@@ -8,7 +8,6 @@ import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import com.springinaction.chapter11.entity.Spitter;
@@ -16,7 +15,7 @@ import com.springinaction.chapter11.factory.HibernateSessionFactory;
 import com.springinaction.chapter7.exceptions.DuplicateSpittleException;
 import com.springinaction.chapter9.repository.SpitterRepository;
 
-//@Repository
+@Repository
 public class HibernateSpitterRepositoryImpl implements SpitterRepository{
 
 	@Autowired
@@ -34,19 +33,6 @@ public class HibernateSpitterRepositoryImpl implements SpitterRepository{
 	public List<Spitter> findAll() {
 		Criteria criteria = getSession().createCriteria(Spitter.class);
 		return criteria.list();
-//		Query<Spitter> query = getSession().createQuery("from Spitter");
-//		return query.getResultList();
-//		EntityManager manager = sessionFactory.sessionFactory().getObject().createEntityManager();
-//		CriteriaBuilder builder = manager.getCriteriaBuilder();
-//		CriteriaQuery<Spitter> criteria = builder.createQuery(Spitter.class);
-//		Root<Spitter> root = criteria.from(Spitter.class);
-//		criteria.select(root);
-//		return manager.createQuery(criteria).getResultList();
-//		return (List<Spitter>) getSession().createCriteria(Spitter.class);
-//		CriteriaBuilder builder = entityManager.getCriteriaBuilder();
-//		CriteriaQuery<Spitter> criteria = builder.createQuery(Spitter.class);
-//		return entityManager.createQuery(criteria).getResultList();
-//		return null;
 	}
 
 	public Long count() {

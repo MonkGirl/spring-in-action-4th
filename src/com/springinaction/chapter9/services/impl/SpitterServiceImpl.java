@@ -15,7 +15,9 @@ public class SpitterServiceImpl implements SpitterService{
 
 	@Autowired
 	//@Qualifier("hibernateSpitterRepositoryImpl")
-	@Qualifier("applicationRepositoryImpl")
+	//@Qualifier("applicationRepositoryImpl")
+	@Qualifier("containerRepositoryImpl")
+	//@Qualifier("jndiObjectRepositoryImpl")
 	private SpitterRepository repository;
 	
 	@Override

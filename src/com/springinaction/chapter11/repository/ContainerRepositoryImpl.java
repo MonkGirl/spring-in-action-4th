@@ -2,9 +2,12 @@ package com.springinaction.chapter11.repository;
 
 import java.util.List;
 
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.PersistenceUnit;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
@@ -14,11 +17,10 @@ import com.springinaction.chapter7.exceptions.DuplicateSpittleException;
 import com.springinaction.chapter9.repository.SpitterRepository;
 
 @Repository
-public class ApplicationRepositoryImpl implements SpitterRepository{
-	
-	//注入EntityManagerFactory工厂
-	@PersistenceUnit(unitName="applicationEntityManagerFactoryBean")
-	private EntityManagerFactory emf;
+public class ContainerRepositoryImpl implements SpitterRepository{
+
+	@PersistenceContext(unitName="entityManagerFactory")
+	private EntityManager em;
 	
 	@Override
 	public Spitter save(Spitter spitter) throws DuplicateSpittleException {
@@ -29,18 +31,17 @@ public class ApplicationRepositoryImpl implements SpitterRepository{
 	@Override
 	@Transactional
 	public Spitter findByUsername(String username) {
-		String sql = "select * from spitter where username='"+username+"'";
-		Query query = emf.createEntityManager().createNativeQuery(sql, Spitter.class);
+		Query query = em.createNativeQuery("select * from spitter where username='"+username+"'", Spitter.class);
 		return (Spitter) query.getSingleResult();
 	}
 
-	@SuppressWarnings("unchecked")
 	@Override
 	public List<Spitter> findAll() {
-		String sql = "select * from spitter";
-		Query query = emf.createEntityManager().createNativeQuery(sql, Spitter.class);
-		List<Spitter> list = query.getResultList();
-		return list;
+		CriteriaBuilder builder = em.getCriteriaBuilder();
+		CriteriaQuery<Spitter> criteria = builder.createQuery(Spitter.class);
+		Root<Spitter> root = criteria.from(Spitter.class);
+		criteria.select(root);
+		return em.createQuery(criteria).getResultList();
 	}
 
 }

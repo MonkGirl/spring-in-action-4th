@@ -12,34 +12,9 @@ public class ApplicationEntityManagerFactory {
 	 * @return
 	 */
 	@Bean
-	public LocalEntityManagerFactoryBean entityManagerFactoryBean() {
+	public LocalEntityManagerFactoryBean applicationEntityManagerFactoryBean() {
 		LocalEntityManagerFactoryBean lemfb = new LocalEntityManagerFactoryBean();
 		lemfb.setPersistenceUnitName("spitterPU");
 		return lemfb;
 	}
-	
-	/**
-	 * 使用容器管理类型的JPA
-	 * @param dataSource
-	 * @param jpaVendorAdapter
-	 * @return
-	 */
-//	@Bean
-//	public LocalContainerEntityManagerFactoryBean entityManagerFactoryBean(DataSource dataSource, JpaVendorAdapter jpaVendorAdapter){ 
-//		LocalContainerEntityManagerFactoryBean lcemfb = new LocalContainerEntityManagerFactoryBean();
-//		lcemfb.setDataSource(dataSource);
-//		lcemfb.setJpaVendorAdapter(jpaVendorAdapter);
-//		lcemfb.setPackagesToScan(entities);
-//		return lcemfb;
-//	}
-//	
-//	@Bean
-//	public JpaVendorAdapter jpaVendorAdapter() {
-//		HibernateJpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
-//		adapter.setDatabase(Database.ORACLE);
-//		adapter.setShowSql(true);
-//		adapter.setGenerateDdl(false);
-//		adapter.setDatabasePlatform(dialect);
-//		return adapter;
-//	}
 }

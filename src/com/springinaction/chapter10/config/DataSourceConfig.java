@@ -42,7 +42,7 @@ public class DataSourceConfig {
 	 * @return
 	 */
 	@Profile("dev")
-	@Bean
+	@Bean("dataSource")
 	public DataSource dataSource() {
 		BasicDataSource ds = new BasicDataSource();
 		ds.setDriverClassName(oracleDriverClassName);
@@ -59,7 +59,7 @@ public class DataSourceConfig {
 	 * @return
 	 */
 	@Profile("prod")
-	@Bean
+	@Bean("dataSource")
 	public DataSource driverManagerDataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName(sqlServerDriverClassName);
