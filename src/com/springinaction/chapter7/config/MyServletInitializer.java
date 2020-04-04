@@ -15,7 +15,7 @@ public class MyServletInitializer{ //implements WebApplicationInitializer{
 //	@Override
 //	public void onStartup(ServletContext servletContext) throws ServletException {
 //		//注册servlet
-//		Dynamic myServlet = servletContext.addServlet("myServlet", MyServlet.class);
+//		Dynamic myServlet = servletContext.addServlet("my1Servlet", MyServlet.class);
 //		//映射servlet
 //		myServlet.addMapping("/custom/**");
 //		

@@ -1,17 +1,16 @@
 package com.springinaction.chapter8.pizza.service.impl;
 
-import java.io.Serializable;
-import java.util.HashMap;
-import java.util.Map;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.springframework.stereotype.Service;
-
 import com.springinaction.chapter8.pizza.domain.Order;
 import com.springinaction.chapter8.pizza.domain.Pizza;
 import com.springinaction.chapter8.pizza.domain.PizzaSize;
 import com.springinaction.chapter8.pizza.service.PricingEngine;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Service;
+
+import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 
 @Service("pricingEngineImpl")
 public class PricingEngineImpl implements PricingEngine, Serializable{
