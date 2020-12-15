@@ -1,40 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
-  <component name="EclipseModuleManager">
-    <libelement value="jar://E:/Tools/Jars/system-rules-1.17.0.jar!/" />
-    <libelement value="jar://E:/Tools/Jars/jstl-1.2.jar!/" />
-    <libelement value="jar://E:/Tools/Jars/standard-1.1.2.jar!/" />
-    <libelement value="jar://E:/Tools/Mockito/objenesis-2.6/objenesis-2.6.jar!/" />
-    <libelement value="jar://E:/Tools/Mockito/byte-buddy-1.8.0.jar!/" />
-    <libelement value="jar://E:/Tools/Mockito/byte-buddy-agent-1.8.0.jar!/" />
-    <libelement value="jar://E:/Tools/Mockito/mockito-core-2.15.0.jar!/" />
-    <libelement value="jar://E:/Tools/Jars/validation-api-2.0.1.Final.jar!/" />
-    <libelement value="jar://E:/Tools/Jars/tiles-3.0.8/tiles-core-3.0.8.jar!/" />
-    <libelement value="jar://E:/Tools/Jars/tiles-3.0.8/tiles-servlet-3.0.8.jar!/" />
-    <libelement value="jar://E:/Tools/Jars/tiles-3.0.8/tiles-api-3.0.8.jar!/" />
-    <libelement value="jar://E:/Tools/Jars/tiles-3.0.8/tiles-jsp-3.0.8.jar!/" />
-    <libelement value="jar://E:/Tools/Jars/tiles-3.0.8/tiles-template-3.0.8.jar!/" />
-    <libelement value="jar://E:/Tools/Jars/tiles-3.0.8/tiles-autotag-core-runtime-1.2.jar!/" />
-    <libelement value="jar://E:/Tools/Jars/aspectj/aspectj-1.9.0.jar!/" />
-    <libelement value="jar://E:/Tools/Jars/aspectj/aspectjweaver-1.8.13.jar!/" />
-    <conelement value="org.eclipse.jst.j2ee.internal.web.container" />
-    <conelement value="org.eclipse.jst.j2ee.internal.module.container" />
-    <conelement value="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Study" />
-    <src_description expected_position="0">
-      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
-    </src_description>
-  </component>
   <component name="FacetManager">
-    <facet type="web" name="Web">
-      <configuration>
-        <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/web/WEB-INF/web.xml" />
-        </descriptors>
-        <webroots>
-          <root url="file://$MODULE_DIR$/WebContent" relative="/" />
-        </webroots>
-      </configuration>
-    </facet>
     <facet type="JRebel" name="JRebel">
       <configuration>
         <option name="ideModuleStorage">
@@ -43,74 +9,11 @@
             <entry key="com.zeroturnaround.jrebel.remoting.DeleteUnindexedFiles" value="false" />
             <entry key="com.zeroturnaround.jrebel.remoting.ModuleRemoteServerSelection" value="off" />
             <entry key="jrebelEnabled" value="true" />
-            <entry key="lastExternalPluginCheckTime" value="1583895147153" />
           </map>
         </option>
       </configuration>
     </facet>
-    <facet type="jpa" name="JPA">
-      <configuration>
-        <setting name="validation-enabled" value="true" />
-        <datasource-mapping>
-          <factory-entry name="applicationEntityManagerFactoryBean" />
-          <factory-entry name="entityManagerFactory" />
-          <factory-entry name="spitterPU" value="b2079fac-5d4e-4f59-9ae6-9d285f00c220" />
-        </datasource-mapping>
-        <naming-strategy-map />
-        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/META-INF/persistence.xml" />
-      </configuration>
-    </facet>
-    <facet type="Spring" name="Spring">
-      <configuration>
-        <fileset id="fileset" name="Spring Application Context" removed="false">
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter4/xmlAspect/resources/aspectConfig.xml</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter2/mixedConfig/resources/cd-config.xml</file>
-          <file>file://$MODULE_DIR$/src/cdplayer-config.xml</file>
-          <file>file://$MODULE_DIR$/src/config.xml</file>
-          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring/dataaccess.xml</file>
-          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring/datasource.xml</file>
-          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring/domain.xml</file>
-          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring/flow.xml</file>
-          <file>file://$MODULE_DIR$/src/knight.xml</file>
-          <file>file://$MODULE_DIR$/src/minstrel.xml</file>
-          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring/mvc.xml</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter2/mixedConfig/resources/police-config.xml</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter3/resources/profileconfig.xml</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter3/resources/profileconfigs.xml</file>
-          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring/root-config.xml</file>
-          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring/services.xml</file>
-          <file>file://$MODULE_DIR$/src/config/view.xml</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter11/factory/ApplicationEntityManagerFactory.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter2/mixedConfig/main/CDConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter2/mixedConfig/main/CDPlayerConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter2/soundsystem/CDPlayerConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter3/main/ComputerConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter4/concert/config/ConcertConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter11/factory/ContainerEntityManagerFactory.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter10/config/DataSourceConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter3/config/DataSourceConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter4/delegate/main/DelegateConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter3/config/DevelopmentProfileConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter3/main/ExpressiveConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter11/factory/HibernateSessionFactory.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter9/config/JpaConfiguration.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter1/config/KnightConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter3/main/MagicConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter2/mixedConfig/xmlImportJava/PoliceConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter3/config/ProductinProfileConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter5/spittr/config/RootConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter7/config/RootConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter9/config/RootConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter9/config/SecurityConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter2/mixedConfig/main/SoundSystemConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter4/soundsystem/config/TrackCounterConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter5/spittr/config/WebConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter9/config/WebConfig.java</file>
-          <file>file://$MODULE_DIR$/src/com/springinaction/chapter7/config/WebConfig.java</file>
-        </fileset>
-      </configuration>
-    </facet>
-    <facet type="web" name="Web2">
+    <facet type="web" name="Web">
       <configuration>
         <descriptors>
           <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/WebContent/WEB-INF/web.xml" />
@@ -120,172 +23,28 @@
         </webroots>
       </configuration>
     </facet>
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <datasource-mapping />
+        <naming-strategy-map />
+        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/META-INF/persistence.xml" />
+      </configuration>
+    </facet>
   </component>
-  <component name="NewModuleRootManager">
-    <output url="file://$MODULE_DIR$/build/classes" />
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
-    <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="junit5">
-        <CLASSES>
-          <root url="jar://$APPLICATION_HOME_DIR$/lib/junit.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="system-rules-1.17.0.jar">
-        <CLASSES>
-          <root url="jar://E:/Tools/Jars/system-rules-1.17.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="jstl-1.2.jar">
-        <CLASSES>
-          <root url="jar://E:/Tools/Jars/jstl-1.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="standard-1.1.2.jar">
-        <CLASSES>
-          <root url="jar://E:/Tools/Jars/standard-1.1.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="objenesis-2.6.jar">
-        <CLASSES>
-          <root url="jar://E:/Tools/Mockito/objenesis-2.6/objenesis-2.6.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="byte-buddy-1.8.0.jar">
-        <CLASSES>
-          <root url="jar://E:/Tools/Mockito/byte-buddy-1.8.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="byte-buddy-agent-1.8.0.jar">
-        <CLASSES>
-          <root url="jar://E:/Tools/Mockito/byte-buddy-agent-1.8.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="mockito-core-2.15.0.jar">
-        <CLASSES>
-          <root url="jar://E:/Tools/Mockito/mockito-core-2.15.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="validation-api-2.0.1.Final.jar">
-        <CLASSES>
-          <root url="jar://E:/Tools/Jars/validation-api-2.0.1.Final.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="tiles-core-3.0.8.jar">
-        <CLASSES>
-          <root url="jar://E:/Tools/Jars/tiles-3.0.8/tiles-core-3.0.8.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="tiles-servlet-3.0.8.jar">
-        <CLASSES>
-          <root url="jar://E:/Tools/Jars/tiles-3.0.8/tiles-servlet-3.0.8.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="tiles-api-3.0.8.jar">
-        <CLASSES>
-          <root url="jar://E:/Tools/Jars/tiles-3.0.8/tiles-api-3.0.8.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="tiles-jsp-3.0.8.jar">
-        <CLASSES>
-          <root url="jar://E:/Tools/Jars/tiles-3.0.8/tiles-jsp-3.0.8.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="tiles-template-3.0.8.jar">
-        <CLASSES>
-          <root url="jar://E:/Tools/Jars/tiles-3.0.8/tiles-template-3.0.8.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="tiles-autotag-core-runtime-1.2.jar">
-        <CLASSES>
-          <root url="jar://E:/Tools/Jars/tiles-3.0.8/tiles-autotag-core-runtime-1.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="aspectj-1.9.0.jar">
-        <CLASSES>
-          <root url="jar://E:/Tools/Jars/aspectj/aspectj-1.9.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="aspectjweaver-1.8.13.jar">
-        <CLASSES>
-          <root url="jar://E:/Tools/Jars/aspectj/aspectjweaver-1.8.13.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
     <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="SpringInAction_lib" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Study" level="application_server_libraries" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://E:/Tools/Log4j/apache-log4j-2.11.0-bin/log4j-api-2.11.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Tools/Junit/junit-4.12.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -294,7 +53,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://E:/Tools/Commons/commons-text-1.3/commons-text-1.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Tools/Mockito/mockito-core-2.15.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -303,23 +62,10 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://E:/Tools/Jdbc/ojdbc7.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Tools/Jars/system-rules-1.17.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://E:/Tools/Spring/spring-framework-5.2.2.RELEASE/libs" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://E:/Tools/Spring/spring-framework-5.2.2.RELEASE/libs" />
-        </SOURCES>
-        <jarDirectory url="file://E:/Tools/Spring/spring-framework-5.2.2.RELEASE/libs" recursive="false" />
-        <jarDirectory url="file://E:/Tools/Spring/spring-framework-5.2.2.RELEASE/libs" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
   </component>
