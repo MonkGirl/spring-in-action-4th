@@ -9,6 +9,7 @@
             <entry key="com.zeroturnaround.jrebel.remoting.DeleteUnindexedFiles" value="false" />
             <entry key="com.zeroturnaround.jrebel.remoting.ModuleRemoteServerSelection" value="off" />
             <entry key="jrebelEnabled" value="true" />
+            <entry key="rebelXmlGenerationType" value="ide" />
           </map>
         </option>
       </configuration>
@@ -31,6 +32,39 @@
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/META-INF/persistence.xml" />
       </configuration>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/com/springinaction/chapter4/xmlAspect/resources/aspectConfig.xml</file>
+          <file>file://$MODULE_DIR$/build/classes/com/springinaction/chapter4/xmlAspect/resources/aspectConfig.xml</file>
+          <file>file://$MODULE_DIR$/src/com/springinaction/chapter2/mixedConfig/resources/cd-config.xml</file>
+          <file>file://$MODULE_DIR$/build/classes/com/springinaction/chapter2/mixedConfig/resources/cd-config.xml</file>
+          <file>file://$MODULE_DIR$/src/cdplayer-config.xml</file>
+          <file>file://$MODULE_DIR$/build/classes/cdplayer-config.xml</file>
+          <file>file://$MODULE_DIR$/build/classes/config.xml</file>
+          <file>file://$MODULE_DIR$/src/config.xml</file>
+          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring/dataaccess.xml</file>
+          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring/datasource.xml</file>
+          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring/domain.xml</file>
+          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring/flow.xml</file>
+          <file>file://$MODULE_DIR$/build/classes/knight.xml</file>
+          <file>file://$MODULE_DIR$/src/knight.xml</file>
+          <file>file://$MODULE_DIR$/src/minstrel.xml</file>
+          <file>file://$MODULE_DIR$/build/classes/minstrel.xml</file>
+          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring/mvc.xml</file>
+          <file>file://$MODULE_DIR$/src/com/springinaction/chapter2/mixedConfig/resources/police-config.xml</file>
+          <file>file://$MODULE_DIR$/build/classes/com/springinaction/chapter2/mixedConfig/resources/police-config.xml</file>
+          <file>file://$MODULE_DIR$/src/com/springinaction/chapter3/resources/profileconfig.xml</file>
+          <file>file://$MODULE_DIR$/build/classes/com/springinaction/chapter3/resources/profileconfig.xml</file>
+          <file>file://$MODULE_DIR$/src/com/springinaction/chapter3/resources/profileconfigs.xml</file>
+          <file>file://$MODULE_DIR$/build/classes/com/springinaction/chapter3/resources/profileconfigs.xml</file>
+          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring/root-config.xml</file>
+          <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring/services.xml</file>
+          <file>file://$MODULE_DIR$/src/config/view.xml</file>
+          <file>file://$MODULE_DIR$/build/classes/config/view.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
@@ -40,16 +74,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="SpringInAction_lib" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Study" level="application_server_libraries" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../Tools/Junit/junit-4.12.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" scope="PROVIDED" name="Hygeia" level="application_server_libraries" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -62,7 +87,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../Tools/Jars/system-rules-1.17.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Tools/Jars/validation-api-2.0.1.Final.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -71,7 +96,16 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../Tools/Jars/validation-api-2.0.1.Final.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Tools/Jars/junit-4.12.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../Tools/Jars/system-rules-1.17.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

@@ -1,16 +1,15 @@
 /**
- * 
+ *
  */
 package com.springinaction.chapter5.spittr.test;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
-
-import org.junit.jupiter.api.Test;
+import com.springinaction.chapter5.spittr.web.HomeController;
+import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.springinaction.chapter5.spittr.web.HomeController;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standaloneSetup;
 
 /**
  * @author MonkGirl
@@ -19,12 +18,12 @@ import com.springinaction.chapter5.spittr.web.HomeController;
 
 public class HomeControllerTest {
 
-	@Test
-	public void testHomePage() throws Exception {
-		HomeController controller = new HomeController();
-		MockMvc mockMvc = standaloneSetup(controller).build();
-		mockMvc.perform(get("/")).andExpect(view().name("home"));
+    @Test
+    public void testHomePage() throws Exception {
+        HomeController controller = new HomeController();
+        MockMvc mockMvc = standaloneSetup(controller).build();
+        mockMvc.perform(get("/")).andExpect(view().name("home"));
 //		assertEquals("home", controller.home());
-	}
+    }
 
 }

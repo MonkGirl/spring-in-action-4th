@@ -3,7 +3,7 @@
  */
 package com.springinaction.chapter4.delegate.test;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 
