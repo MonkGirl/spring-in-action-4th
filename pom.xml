@@ -8,7 +8,7 @@
         <artifactId>load-to-architect</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>spring-series</artifactId>
+    <artifactId>spring-in-action-4th</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
