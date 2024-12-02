@@ -12,7 +12,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>spring-series</name>
+    <name>spring-in-action-4th</name>
     <url>https://www.monkgirl.com</url>
 
 </project>
